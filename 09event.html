@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button type="button" id="tombol" onclick="halo()">Tekan Saya</button>
+    <button type="button" id="tombol2">Tekan Saya juga</button>
+    <button type="button" id="tombol3" onclick="konfirmasi()">Tekan Saya juga</button>
+
+    <script>
+         function konfirmasi(){
+            //confirm("yakin kids?")
+            var pilihan = confirm("Yakin coy?")
+            console.log(pilihan)
+        }
+        
+        function halo(){
+          console.log("Halo")
+          console.log("ini dijalankan ketika tombol diclick ")
+        }
+
+        var tombol2 = document.querySelector("#tombol2")
+        tombol2.addEventListener("click", function(){
+            halo()
+        })
+
+       
+
+
+    </script>
+
+
+</body>
+</html>

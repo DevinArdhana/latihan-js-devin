@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var devin = {
+            rambut: "Hitam",
+            umur: 16,
+            lulusSMA: false,
+            nama: "Devin",
+            hobi: ["Ngoding", "Membaca"], // [] = Array
+            tambahUmur: function(){
+                this.umur = this.umur + 1 // 'this' = "KATA KUNCI KHUSUS"
+            }
+
+        }
+
+        var dewa = {
+            rambut: "Hitam",
+            umur: 31,
+            lulusSMA: true,
+            nama: "Dewa",
+            hobi: ["Ngoding", "Main Game"], // [] = Array
+            tambahUmur: function(x){
+                this.umur = this.umur + x
+        },
+        checkLulus: function(){
+            return this.lulusSMA
+        }
+
+    }
+
+
+        console.log(devin.nama)
+        console.log(devin.umur)
+        console.log(devin.hobi[0])
+        devin.tambahUmur()
+        console.log(devin.umur)
+
+
+        console.log(dewa.nama)
+        console.log(dewa.umur)
+        console.log(dewa.hobi[1])
+
+
+
+    </script>
+
+
+</body>
+</html>
